@@ -4,7 +4,6 @@ using System.Threading;
 
 namespace GemsSelenium
 {
-    // TODO: придумать имя класса
     public class BrowserOps
     {
         PhantomJSDriver browser;
@@ -18,7 +17,6 @@ namespace GemsSelenium
 
         public bool FindVisibleElement(string className)
         {
-
             IWebElement search = browser.FindElement(By.ClassName(className));
 
             return search.GetCssValue("visibility") == "visible" ? true : false;
