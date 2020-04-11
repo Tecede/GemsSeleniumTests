@@ -12,16 +12,6 @@ namespace GemsSelenium
     {
         static void Main(string[] args)
         {
-            // programm logic
-
-            //BrowserOps pik = new BrowserOps("https://gemsdev.ru/geometa/");
-
-            //pik.FindElement("my-150");
-            //pik.FindElement("gos-system");
-            //pik.FindElement("urban-analytics");
-            //pik.FindElement("other-products");
-
-            //Console.ReadKey();
         }
     }
 }

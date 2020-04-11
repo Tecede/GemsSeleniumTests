@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GemsSelenium;
-using Xunit;
+﻿using Xunit;
 
 namespace GemsSelenium.Tests
 {
@@ -19,11 +13,9 @@ namespace GemsSelenium.Tests
         {
             BrowserOps pik = new BrowserOps(url);
 
-            bool actual = pik.FindElement(className);
+            bool actual = pik.FindVisibleElement(className);
 
             Assert.True(actual);
-
-            pik.Close();
         }
 
         [Fact]
@@ -34,8 +26,6 @@ namespace GemsSelenium.Tests
             bool actual = pik.FindLink("https://xn--c1aaceme9acfqh.xn--p1ai/");
 
             Assert.True(actual);
-
-            pik.Close();
         }
     }
 }
